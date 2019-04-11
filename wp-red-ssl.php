@@ -1,3 +1,5 @@
+<?php
+
 /**
 * Plugin Name: WP Red SSL
 * Plugin URI: https://github.com/rednode-ltd/wp-red-ssl/
@@ -12,3 +14,5 @@ define('FORCE_SSL_ADMIN', true);
 if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
     $_SERVER['HTTPS'] = 'on';
 }
+
+?>
